@@ -24,6 +24,8 @@ class Person {
         this.mood = 0
         this.hamsters = []
         this.bankAccount = 0
+        this.ate = 0
+        this.workout = 0
     }
     getName() {
         return `The boy's name is ${this.name}.`
@@ -33,23 +35,28 @@ class Person {
     }
     getWeight() {
         
-        return `he's weight is also ${this.weight} because he is a baby.`
+        return `he's weight is also ${this.weight}`
     }
     greet() {
         return `Hi, ${this.name} how are you? .`
     }
-    eat() {
-        return `your weight is now ${this.weight++} and you mood is ${this.mood++} you get happy when you eat.`
-    }
-    exercise() {
-        return `The weight is now ${this.weight--} because you exercise 5 times a day. That's good Timmy you're losing weight`
+    sad() {
+       return `At this point, ${this.name} is a little bummed. As a precious child, he feels he's seen it all`
     }
 
-    ageUp () {
-        return `${this.age += 9} You are 9 years old now!! Aren't you happy ${this.name}.`
+    eatAgain () {
+        return `He eats ${this.ate += 5} a day. You are eating alot ${this.name}`
     }
-    ageUpAgain () {
-       return `Now you are ${this.age ++} and you weigh ${this.weight+= 60} pounds, and you height is ${this.height+= 3}inches but your mood ${this.mood -= 10} why?, ${this.bankAccount +=50} this is your birthday money I hope it'll make you feel better.`
+    eat() {
+        return `your weight is now ${this.weight+= 30} pounds and you mood is ${this.mood+=4} you get happy when you eat.`
+    }
+    exercise() {
+        return `Timmy is going to kindergarten soon so he is exercising ${this.workout += 5} times a day. His weight is now ${this.weight-= 10} pounds because he's been exercising. That's good Timmy you're losing weight`
+    }
+
+
+    ageUp () {
+       return `Now you are ${this.age +=10} years old  and you weigh ${this.weight+= 10} pounds, and you height is ${this.height+= 50}feet but your mood ${this.mood -= 2} why?, ${this.bankAccount +=10} this is your birthday money I hope it'll make you feel better.`
 
     }
     
@@ -65,6 +72,8 @@ timmy.getName();
 timmy.getAge();
 timmy.getWeight('10');
 timmy.greet();
+timmy.sad();
+timmy.eatAgain();
 timmy.eat();
 timmy.exercise();
 timmy.ageUp();
@@ -75,5 +84,45 @@ timmy.buyHamster();
 const gus = new Hamster ('Timmy', 'Gus', )
 console.log(gus.wheelRun(),gus.eatFood(),gus.getPrice())
 
-console.log(timmy.getName(),timmy.getAge(),timmy.getWeight(),timmy.greet(),timmy.eat(),timmy.exercise(),timmy.ageUp(),timmy.ageUpAgain(),timmy.buyHamster());
+console.log(timmy.getName());
+console.log(timmy.getAge());
+console.log(timmy.getWeight());
+console.log(timmy.greet());
+console.log(timmy.sad());
+console.log(timmy.eatAgain());
+console.log(timmy.eat());
+console.log(timmy.exercise());
+console.log(timmy.ageUp());
+console.log(timmy.buyHamster());
 
+
+class Dinner {
+    constructor( appetizer, entree, dessert) {
+
+    
+    this.appetizer = 'appetizer';
+    this.entree = 'entree'
+    this.dessert = 'dessert'
+    }
+    
+
+}
+ class Chef {
+    constructor (dinnerType) {
+    this.dinnerType = dinnerType;
+    }
+    makeDinner(appetizer,entree,dessert) {
+        const newDinner = new Dinner(appetizer, entree, dessert);
+
+    }
+ }
+
+
+
+
+
+// newDinner.makeDinner('shrimp salad', 'spagetti aglio', 'vanilla cake')
+// newDinner.makeDinner('bread sticks', 'burger and fries', 'chocolate ice cream')
+// newDinner.makeDinner('naan and butter', 'butter chicken and rice', 'coconut cookies')
+
+// console.log(newDinner)

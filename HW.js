@@ -96,33 +96,33 @@ console.log(timmy.ageUp());
 console.log(timmy.buyHamster());
 
 
-class Dinner {
-    constructor( appetizer, entree, dessert) {
+// class Dinner {
+//     constructor( appetizer, entree, dessert) {
 
     
-    this.appetizer = 'appetizer';
-    this.entree = 'entree'
-    this.dessert = 'dessert'
-    }
+//     this.appetizer = 'appetizer';
+//     this.entree = 'entree'
+//     this.dessert = 'dessert'
+//     }
     
 
-}
- class Chef {
-    constructor (dinnerType) {
-    this.dinnerType = dinnerType;
-    }
-    makeDinner(appetizer,entree,dessert) {
-        const newDinner = new Dinner(appetizer, entree, dessert);
+// }
+//  class Chef {
+//     constructor (dinnerType) {
+//     this.dinnerType = dinnerType;
+//     }
+//     makeDinner(appetizer,entree,dessert) {
+//         const newDinner = new Dinner(appetizer, entree, dessert);
 
-    }
- }
-
-
+//     }
+//  }
 
 
 
-// newDinner.makeDinner('shrimp salad', 'spagetti aglio', 'vanilla cake')
-// newDinner.makeDinner('bread sticks', 'burger and fries', 'chocolate ice cream')
-// newDinner.makeDinner('naan and butter', 'butter chicken and rice', 'coconut cookies')
 
-// console.log(newDinner)
+
+// // newDinner.makeDinner('shrimp salad', 'spagetti aglio', 'vanilla cake')
+// // newDinner.makeDinner('bread sticks', 'burger and fries', 'chocolate ice cream')
+// // newDinner.makeDinner('naan and butter', 'butter chicken and rice', 'coconut cookies')
+
+// // console.log(newDinner)
